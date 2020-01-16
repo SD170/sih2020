@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Fjalla+One&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link rel="stylesheet" type="text/css" href="particle.css">
+
+
+
+
+	<title>Signup_Page</title>
+</head>
+<body id="particles-js">
+	<div id="particles-js">
+
+		<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #aadcff;">
+			<a class="navbar-brand" href="home.html">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="navbar-nav">
+				</div>
+			</div>
+			<a class="nav-item nav-link justify-content-end" href="signup.html">Sign Up</a>
+		  </nav>
+
+
+		<h1 class="caps">Hello, New User</h1>
+		<center>
+			<div> 
+				<h3>First, Fill The Details Below</h3>
+				<form action="" method="POST" class="form" >
+					<input type="name" name="first_name" placeholder="Enter your First Name"required><br><!-- BACKEND -->
+					<input type="name" name="middle_name" placeholder="Enter your Middle Name"><br><!-- BACKEND -->
+					<input type="name" name="last_name" placeholder="Enter your Last Name" required><br><!-- BACKEND -->
+					<input type="email" name="email" placeholder="Enter your Email"><br><!-- BACKEND -->
+					<input type="password" name="password" placeholder="Enter New Password" required><br><!-- BACKEND -->
+					
+					<input type="text" name="dateofbirth" placeholder="Enter Date of birth" onfocus="(this.type='date')"><!-- BACKEND -->
+					<select name="Gender" placeholder="yo"><!-- BACKEND -->
+						<option value="male">Male</option>
+						<option value="Female">Female</option>
+						<option value="male">Others</option>
+
+					</select>
+							<input type="submit" value="SUBMIT" class="btn btn-primary sas" onclick="alert('Sign Up Done \n Click \'Go To Homepage\'')" ><!-- BACKEND -->
+				</form>
+					<a href="home.html">
+						<button class="btn btn-primary sas">Go to Homepage</button>
+					</a>
+			</div>
+	
+		
+		</center>
+	</div>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script>
+			particlesJS.load('particles-js', 'particles.json',()=>{
+
+				console.log('particle.json loaded...')
+			});
+		</script>
+	
+
+</body>
+</html>
